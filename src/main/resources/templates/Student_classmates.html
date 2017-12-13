@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="student_fragments :: head">
+
+
+
+</head>
+
+<body class="container body-content">
+
+<nav th:replace="student_fragments  :: navigation"></nav>
+<div th:replace="fragments :: dropdown" ></div>
+
+<br/>
+<br/>
+<br/>
+
+<h1 th:text="${title}">Default Title</h1>
+
+
+
+<table class="table">
+
+    <tr>
+        <th style="text-align:center;">Name</th>
+
+
+    </tr>
+    <tr th:each="Student1 : ${List3}">
+        <td style="text-align:center;" th:text="${Student1.getStudent().getStudentName()}"></td>
+
+    </tr>
+
+
+
+</table>
+
+</body>
+</html>

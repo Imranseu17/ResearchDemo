@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="fragments :: head"></head>
+
+<body class="container body-content">
+
+<nav th:replace="student_fragments :: navigation"></nav>
+<div th:replace="fragments :: dropdown" ></div>
+
+<br/>
+<br/>
+<br/>
+
+<h1 th:text="${title}">Default Title</h1>
+<h3 th:text="${title1}">Default Title</h3>
+
+<form action="attendance_status" method="get">
+    Attendance:
+
+<input type="submit" value="Show the Attendence Status for this Section" />
+
+</form>
+
+
+
+
+
+
+</body>
+</html>

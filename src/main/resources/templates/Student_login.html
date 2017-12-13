@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+<h1 th:text="${title}"> Default title</h1>
+
+
+
+<form action="student/home" method="get" style="max-width:600px;" th:object="${cheese}">
+
+    <!--add Name-->
+    <div class="form-group">
+        <label th:for="name"> Student Id</label>
+        <input class="form-control"  name="id" placeholder="ex:2014100000017  to 2014100000029 "/>
+
+
+        <span  class="error"/>
+    </div>
+
+    <input type="submit" value="Login"  />
+</form>
+
+</body>
+</html>

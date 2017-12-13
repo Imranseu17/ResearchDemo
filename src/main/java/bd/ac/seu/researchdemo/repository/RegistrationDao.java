@@ -11,5 +11,6 @@ import java.util.List;
 @Transactional
 public interface RegistrationDao extends CrudRepository<Registration,Integer> {
     public List<Registration> findBySectionId(int id);
+    public  List<Registration> findByStudentStudentId(String id);
 
 }
